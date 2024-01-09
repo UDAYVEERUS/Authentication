@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+
+        }
+
+        .container {
+            /* background-color: #fff; */
+            border-radius: 1px;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            padding: 50px;
+            width: 60%;
+            /* box-sizing: border-box; */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            /* font-weight: bold; */
+            margin-bottom: 5px;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button-container {
+            text-align: right;
+        }
+
+        button {
+            background-color: black;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            width: 30%;
+            font-size: 17px;
+            /* border-radius: 4px; */
+            cursor: pointer;
+        }
+
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            /* font-weight: bold; */
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .button-container {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <h1 style="text-align: center; margin-top: 0px; font-size: 50px;">REGISTER PAGE</h1><hr/>
+
+        <h1>SIGN UP PAGE</h1>
+        <p>Register now and start enjoying the benefits of a customer account right away.</p>
+
+<p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-top: 5px;">
+            Please complete all fields marked with an *.
+        </p>
+        <form>
+            <div class="form-group" style="width: 30%;">
+                <label for="salutation">Salutation:</label>
+                <select id="salutation" name="salutation">
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="miss">Miss</option>
+                </select>
+            </div>
+
+            <div class="form-group" style="width: 100%; display: flex; gap: 5px;">
+                <div style="width: 50%;">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div style="width: 50%;">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label>Date of Birth:</label>
+                <div class="row" style="gap:5px">
+                    <select id="dobDay" name="dobDay">
+                        <option value="01/01/2014">SUNDAY</option> 
+                        <option value="01/01/2014">MONDAY</option> 
+                    </select>
+                    <select id="dobMonth" name="dobMonth">
+                        <option value="01/01/2014"> JANUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                        <option value="01/01/2014"> FEBRUARY</option> 
+                    </select>
+                    <select id="dobYear" name="dobYear">
+                        <option value="2001">2001</option> 
+                        <option value="2001">2001</option> 
+                        <option value="2001">2001</option> 
+                        <option value="2001">2001</option> 
+                        <option value="2001">2001</option> 
+                        <option value="2001">2001</option> 
+                        <option value="2001">2001</option> 
+                        <option value="2001">2001</option> 
+                        <option value="2001">2001</option> 
+                        <option value="2001">2001</option> 
+                        <option value="2001">2001</option> 
+                        <option value="2001">2001</option> 
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <form>
+                <label>
+                    <input type="checkbox" style="width: 20px; ">
+                    E-Mail<br />
+                    <p style="margin-left: 37px; margin-top: -2px; font-size: 15px;">Never miss our new products and
+                        discounts. Be sure you are up to date on the new lifestyle and fashion trends.</p>
+
+                </label>
+                <label>
+                    <input type="checkbox" style="width: 20px;">
+                    PERSONALIZED OFFERS<br />
+                    <p style="margin-left: 37px; margin-top: -2px; font-size: 15px;">Get unique content and
+                        recommendations based on your personalized interests and shopping habits.</p>
+                </label>
+            </form>
+            <hr />
+            <p style="font-family: 'Times New Roman', Times, serif;">The <a href="#"
+                    style="color: black; font-weight: 700; ">Terms and Conditions </a>as well as the associated <a
+                    href="#" style="color: black; font-weight: 700;">Privacy Policy</a> are applicable for participation
+                in HUGO BOSS EXPERIENCE.</p>
+            <p style="font-family: 'Times New Roman', Times, serif;">By clicking “create account”, I confirm that I have
+                read and agree to the <a href="#" style="color: black; font-weight: 700;">Terms and Conditions</a> of
+                HUGO BOSS AG for participation in HUGO BOSS EXPERIENCE. </p>
+            <div class="button-container">
+                <button type="submit">Create Account</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
